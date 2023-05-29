@@ -1,3 +1,18 @@
+.cta-image{
+    height: 464px;
+    width: 100%;
+    object-fit: cover;
+}
+.newsletter{
+    // margin: auto;
+    text-align: center;
+    background-color: $white;
+    border-radius: 10px;
+    padding: 55px 220px;
+    p{
+        max-width: 420px;
+    }
+}
 
 .service-area {
     padding-top: 109px;

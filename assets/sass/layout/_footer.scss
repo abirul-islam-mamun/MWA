@@ -1,0 +1,147 @@
+.mwa-main-footer {
+    background: linear-gradient(to right, rgba(30, 30, 30) 0%, #1E1E1E 270px, rgba(30, 30, 30, 0.9) 270px, rgba(30, 30, 30, 0.9) 100%);
+}
+
+.footer-content {
+    display: flex;
+}
+
+.footer-left {
+    padding: 50px 46px 12px 70px;
+    min-width: 270px;
+}
+
+.footer-logo {
+    width: 154px;
+    height: 40px;
+}
+
+.footer-social {
+    padding-top: 38px;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.social-single-list-link {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+
+    i {
+        font-size: 12px;
+        color: $dark-gray;
+    }
+
+    .tooltiptext {
+        visibility: hidden;
+        background-color: $white;
+        color: $dark-gray;
+        text-align: center;
+        padding: 5px 10px;
+        font-size: 12px;
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: 120%;
+        left: 50%;
+
+        // @media (max-width: 991px) {
+        //     padding: 5px 4px;
+        //     font-size: 10px;
+        //     left: 10%;
+        // }
+    }
+
+    &:hover {
+        background-color: $global-consulting;
+
+        i {
+            color: $white;
+        }
+
+        .tooltiptext {
+            transition-delay: 0.8s;
+            visibility: visible;
+        }
+    }
+}
+
+.copy-right {
+    padding-top: 150px;
+    color: $white;
+    font-weight: 300;
+    font-size: 10px;
+    width: 200px;
+    width: 160px;
+}
+
+.footer-menu {
+    width: 100%;
+    padding-top: 125px;
+    padding-left: 30px;
+    padding-right: 102px;
+    margin-left: 0;
+    margin-right: 0;
+    // display: grid;
+    // grid-template-columns: repeat(7, 1fr);
+}
+
+.footer-single-menu {
+    h4 {
+        font-weight: 400;
+        font-size: 14px;
+        color: $white;
+    }
+}
+
+.single-menu-list-items {
+    li {
+        padding-top: 10px;
+
+        a {
+            font-size: 10px;
+            font-weight: 300;
+            color: $white;
+            opacity: 0.7;
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            align-items: center;
+            column-gap: 5px;
+
+            i {
+                Width: 10px;
+                // Height: 8px;
+                color: $white;
+                opacity: 1;
+            }
+
+            // &:hover {
+            //     color: $global-consulting;
+            // }
+        }
+    }
+}
+
+.privacy-policy {
+    display: flex;
+    justify-content: end;
+    margin: 0 70px;
+    border-top: 0.5px solid $gold;
+
+    p {
+        padding-top: 16px;
+        padding-right: 98px;
+        padding-bottom: 50px;
+        font-weight: 300;
+        font-size: 14px;
+        color: $white;
+    }
+}
