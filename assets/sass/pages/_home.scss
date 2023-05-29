@@ -13,3 +13,116 @@
         max-width: 420px;
     }
 }
+
+.service-area {
+    padding-top: 109px;
+}
+.service-wrap {
+    padding: 0 123px 82px 123px;
+    display: flex;
+    justify-content: space-between;
+}
+.single-service {
+    max-width: 215px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    text-align: center;
+    .icon-box {
+        margin-bottom: 17px;
+    }
+    .service-title {
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: 400;
+        color: $dark-gray;
+        margin-bottom: 10px;
+    }
+    .info {
+        font-size: 16px;
+        color: $dark-gray;
+        line-height: 24px;
+        font-weight: 300;
+    }
+}
+.icon-box {
+    height: 96px;
+    width: 96px;
+    border-radius: 50%;
+    border: 1px solid $gray-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon1 {
+        width: 45px;
+        height: 45px;
+        background: $global-consulting;
+        border-radius: 50%;
+    }
+    .icon2 {
+        background: linear-gradient(to bottom, rgba(255, 255, 255) 0%, rgba(255, 255, 255) 50%, $wine-advisor 50%, $wine-advisor 100%);
+    }
+    .icon3 {
+        width: 37px;
+        height: 57px;
+        background: $busines-develop;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .icon4 {
+        img{
+            height: 55px;
+            width: 41px;
+            transform: rotate(90deg);
+        }        
+    }
+}
+.service-bg{
+    position: relative;
+    img{
+        max-width: 1070px;
+        width: 100%;
+        object-fit: cover;
+        object-position: left top;
+        border-top-right-radius: 380px;
+        border-bottom-right-radius: 380px;
+        height: 752px;
+        position: relative;
+        z-index: 11;
+    }
+    .shap01 {
+        position: absolute;
+        bottom: -73px;
+        z-index: 1;
+        left: 108px;
+        img{
+            width: 225px;
+            height: 176px;
+            object-fit: cover;
+            // height: 225px;
+        }
+
+    }
+    .shap02{
+        position: absolute;
+        // width: 142px;
+        // height: 142px;
+        // background: #5900AC;
+        // mix-blend-mode: screen;
+        // transform: rotate(-90deg);   
+        bottom: -73px;
+        z-index: 111;
+        left: 108px;
+        img{
+            width: 225px;
+            height: 176px;
+            object-fit: cover;
+        }
+    }
+}
+
+// blog area start 
+.blog-area {
+    padding-top: 109px;
+}
