@@ -216,3 +216,108 @@
 .blog-area {
     padding-top: 109px;
 }
+.blog-wrap {
+    padding: 0 200px;
+    margin: 0 35px;
+    position: relative;
+    .slick-list {
+        margin: 0 -10px;
+    }
+    .single-blog.slick-slide{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .slick-arrow {
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        background: linear-gradient(to left, $gold, rgba(#D2B98C, 0.1));
+        cursor: pointer;
+        z-index: 1111;
+        outline: none;
+        color: $gold;
+        border: none;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 1px;
+            right: 1.5px;
+            bottom: 0.7px;
+            left: 0px;
+            background-color: white;
+            border-radius: 100px;
+        }
+    }
+    .slick-prev.slick-arrow{
+        position: absolute;
+        top: 45%;
+        transform: translateX(-50%)
+    }
+    .slick-prev.pull-left{
+        left: 103px;
+        z-index: 11;
+    }
+    .slick-prev.pull-right{
+        right: 55px;
+        z-index: 11;
+        background: linear-gradient(to right, $gold, rgba(#D2B98C, 0.1));
+        &::after {
+            top: 1px;
+            right: 0px;
+            bottom: 0.7px;
+            left: 1.5px;
+        }
+    }
+}
+.single-blog {
+    max-width: 310px;
+    background: #FFFFFF;
+    box-shadow: -2px 4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    .blog-img {
+        img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+    .blog-details {
+        padding: 16px 20px 16px 20px;
+        .category {
+            height: 16px;
+            padding: 0 5px;
+            background: transparent;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 300;
+            color: $gold;
+            border: 0.7px solid $gold;
+            border-radius: 3px;
+        }
+        .blog-title {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: $dark-gray;
+        }
+        .blog-info {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 300;
+            color: rgb(30, 30, 30, 0.7);
+            margin-bottom: 5px;
+        }
+        .view-more {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 300;
+            color: $gold;
+            text-align: end;
+            display: block;
+        }
+
+    }
+}
