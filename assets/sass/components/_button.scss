@@ -1,0 +1,26 @@
+.theme-btn {
+    height: 42px;
+    padding: 0px 26px;
+    font-weight: 400;
+    font-size: 14px;
+    color: $dark-gray;
+    border: none;
+    outline: none;
+    position: relative;
+    border-radius: 100px;
+    background: linear-gradient(to right, $gold, rgba(#D2B98C, 0.1));
+    cursor: pointer;
+    z-index: 1111;
+
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 1px;
+        right: 1px;
+        bottom: 1px;
+        left: 1px;
+        background-color: white;
+        border-radius: 100px;
+    }
+}
