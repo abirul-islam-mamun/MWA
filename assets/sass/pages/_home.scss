@@ -1,15 +1,89 @@
-.cta-image{
+.cta-image {
     height: 464px;
     width: 100%;
     object-fit: cover;
+    position: relative;
+    z-index: 1;
 }
-.newsletter{
+
+.news-letter-area {
+    max-width: 860px;
+    height: 352px;
+    text-align: center;
+    padding: 55px 220px;
+    background: $gray-3;
+    margin: 0 auto;
+    position: relative;
+    z-index: 11;
+    margin-bottom: -232px;
+    border-radius: 10px;
+}
+
+.subscribe-area {
+    position: relative;
+    input {
+        width: 100%;
+        height: 40px;
+        padding: 0px 30px;
+        border-radius: 100px;
+        border: 1px solid #D2B98C;
+        font-weight: 300;
+        font-size: 14px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::-webkit-input-placeholder {
+            /* WebKit, Blink, Edge */
+            color: $gold;
+            opacity: 0.5;
+        }
+
+        &::-moz-placeholder {
+            /* Mozilla Firefox 19+ */
+            color: $gold;
+            opacity: 0.5;
+        }
+
+        &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: $gold;
+            opacity: 0.5;
+        }
+
+        &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: $gold;
+            opacity: 0.5;
+        }
+
+        &::placeholder {
+            /* Most modern browsers support this now. */
+            color: $gold;
+            opacity: 0.5;
+        }
+    }
+    .subscribe-btn-part{
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        z-index: 1111;
+    }
+}
+
+.newsletter {
     // margin: auto;
     text-align: center;
     background-color: $white;
     border-radius: 10px;
     padding: 55px 220px;
-    p{
+
+    p {
         max-width: 420px;
     }
 }
@@ -17,11 +91,13 @@
 .service-area {
     padding-top: 109px;
 }
+
 .service-wrap {
     padding: 0 123px 82px 123px;
     display: flex;
     justify-content: space-between;
 }
+
 .single-service {
     max-width: 215px;
     display: flex;
@@ -29,9 +105,11 @@
     align-items: center;
     margin-bottom: 30px;
     text-align: center;
+
     .icon-box {
         margin-bottom: 17px;
     }
+
     .service-title {
         font-size: 28px;
         line-height: 32px;
@@ -39,6 +117,7 @@
         color: $dark-gray;
         margin-bottom: 10px;
     }
+
     .info {
         font-size: 16px;
         color: $dark-gray;
@@ -46,6 +125,7 @@
         font-weight: 300;
     }
 }
+
 .icon-box {
     height: 96px;
     width: 96px;
@@ -54,15 +134,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     .icon1 {
         width: 45px;
         height: 45px;
         background: $global-consulting;
         border-radius: 50%;
     }
+
     .icon2 {
         background: linear-gradient(to bottom, rgba(255, 255, 255) 0%, rgba(255, 255, 255) 50%, $wine-advisor 50%, $wine-advisor 100%);
     }
+
     .icon3 {
         width: 37px;
         height: 57px;
@@ -70,17 +153,20 @@
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
+
     .icon4 {
-        img{
+        img {
             height: 55px;
             width: 41px;
             transform: rotate(90deg);
-        }        
+        }
     }
 }
-.service-bg{
+
+.service-bg {
     position: relative;
-    img{
+
+    img {
         max-width: 1070px;
         width: 100%;
         object-fit: cover;
@@ -91,12 +177,14 @@
         position: relative;
         z-index: 11;
     }
+
     .shap01 {
         position: absolute;
         bottom: -73px;
         z-index: 1;
         left: 108px;
-        img{
+
+        img {
             width: 225px;
             height: 176px;
             object-fit: cover;
@@ -104,7 +192,8 @@
         }
 
     }
-    .shap02{
+
+    .shap02 {
         position: absolute;
         // width: 142px;
         // height: 142px;
@@ -114,7 +203,8 @@
         bottom: -73px;
         z-index: 111;
         left: 108px;
-        img{
+
+        img {
             width: 225px;
             height: 176px;
             object-fit: cover;
